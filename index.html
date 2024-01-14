@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+	
+    
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-ellipsis-v" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>ML and digital design enthusiast</p>
+                    <h1>Hi, I am Adrika Mohanty </h1>
+                </div>
+            </div>
+
+        </div>
+        <!--------about me part---------->
+        <div id="about">
+            <div class="container">
+                <div class = "row">
+                    <div class="about-col-1">
+                        <img src="images/user.jpg" alt="Adrika Mohanty">
+
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me </h1>
+                        <p>I am a student currently pursuing Bachelors in Electronics and Communication engineering,
+                            and minors in Computer science engineering . My interest lies in backend of software development
+                            and front end of chip design that is Digital design . I also have a keen interest in computer architecture
+                            and microarchitecture . Apart from this I am also a trained Bharatanatyam dancer, I have been practicing
+                            now for 16 years . I am also trained in Kathak. Coding 💻and dance💃 are what keeps me going ! 
+                        </p>
+                        <div class ="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"  onclick="opentab('education')">Education</p>
+                            <p class="tab-links"  onclick="opentab('certifications')">Certifications</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li>
+                                    <span>Programming languages</span><br>Python<br>C<br>
+                                </li>
+                                <li>
+                                    <span>HDL</span><br>System Verilog<br>Verilog<br>
+                                </li>
+                                <li>
+                                    <span>Tools</span><br>Linux<br>Quartus Prime<br>Xilinx Vivado<br>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li>
+                                    <span>PES University,Bangalore</span><br>BTech<br>7.89 CGPA
+                                </li>
+                                <li>
+                                    <span>Expert Pre University College, Mangalaore</span><br>Class XII<br>90%<br>
+                                </li>
+                                <li>
+                                    <span>Sri B M Patil Public School, Vijayapura</span><br>Class X, CBSE<br>91.6%<br>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="certifications">
+                            <ul>
+                                <li>
+                                    <span>Linux - A deep dive</span><br>Developed a good working knowledge of Linux distribution<br><i>PESU IO</i><br>
+                                </li>
+                                <li>
+                                    <span>IBM Z Datathon</span><br>Second runner up, recognized for creating ML model to help dyslexic people read <br>online documents easily<br><i>IBM</i><br>
+                                </li>
+                                <li>
+                                    <span>Radha : The eternal longing</span><br>Recognized for being one of the best dancers in project Radha by prominent bharatanatyam dancers<br>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!---------projects------------>
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="projects-list">
+                    <div>
+                        <h2>Comparative analysis of scheduling algorithms</h2>
+                        <p>My final year capstone project where a comparative analysis of scheduling algorithm was done
+                            at hardware level.
+                        </p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <h2>Network and call tracking using Python and Wireshark</h2>
+                        <p>Used Python and Wireshark to track a person's address by analyzing network traffic on Wireshark.
+                        </p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <h2>Implementation of AES alogrithm on RV32I Codasip.</h2>
+                        <p>Implemented AES algorithm using C code on Codasip and RIPES for RV32I processors.
+                        </p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <h2>Object detection using Python.</h2>
+                        <p>A simple ML model for object detection using Python and OpenCV.
+                        </p>
+                        <a href="#">learn more</a>
+                    </div>
+                    
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <!----------Contact -------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fas fa-paper-plane"></i>mohantyadrika@gmail.com</p>
+                        <p><i class="fas fa-phone"></i>9108319431</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <a href="images/Adrika_Resume_updated.pdf" download class="btn btn2">Download CV</a>
+
+                        
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks)
+                {
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents)
+                {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyiI3Wgqt8wD5Jo5PdRs7Q2EZTAcqIY41gqMQdWD_niN2vNPuGyvW9i3MbxIJR-DoTn/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg");
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully !"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
